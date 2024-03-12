@@ -128,6 +128,7 @@
 		<div slot="header">
 			<h3>Header</h3>
 		</div>
+		<hr />
 		<div slot="content"><img src="cover.jpg" alt="" /></div>
 		<div slot="footer"><button>View Details</button></div>
 	</CardTest>
