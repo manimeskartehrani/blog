@@ -1,7 +1,13 @@
+@import 'https://unpkg.com/open-props';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* @keyframes blink {
+	50% {
+		opacity: '0';
+	}
+} */
 /* import 'open-props/style';
 @import 'open-props/normalize';
 @import 'open-props/buttons'; */

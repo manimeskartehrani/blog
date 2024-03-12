@@ -1,9 +1,9 @@
 ---
 title: 'svelte basics'
-imgUrl: ''
+imgUrl: './img/cover.jpg'
 youtubeId: ''
-publishedAt: '2024-02-28'
-summary: 'This is my supplementary blog post to learning svelte!'
+publishedAt: '2024-04-28'
+summary: 'This is my supplementary blog post to learning all about svelte!'
 ---
 
 ## Routes Folder

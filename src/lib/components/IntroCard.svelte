@@ -1,14 +1,5 @@
-<script>
-	import IntroCard from '$lib/components/IntroCard.svelte'
-
-	const aboutMeSentence =
-		'I am Mani an SEO specialist With over 6 years of experience in SEO analysis and data analytics, I specialize in conducting in-depth keyword clustering and topical mapping,analyzing website performance metrics, and developing data-driven strategies to improve online visibility and drive organic traffic. Throughout my career, I have demonstrated proficiency in utilizing advanced analytics tools such as Google Analytics, Ahrefs, insights to stakeholders. I am skilled in Python programming, particularly in extracting, Screaming Frog, and Tableau to interpret data, uncover trends, and communicate actionable well as automating reporting processes in Excel. I am committed to staying updated on transforming, and loading data from Google Search Console and Google Analytics 4 API, as I deliver impactful results and maintain a competitive edge.'
-</script>
-
-<IntroCard aboutMe={aboutMeSentence} />
-
-<!-- <script lang="ts">
-	import AnimationTyping from '../lib/components/AnimationTyping.svelte'
+<script lang="ts">
+	import AnimationTyping from '$lib/components/AnimationTyping.svelte'
 
 	let serviceBtn: boolean = true
 	let aboutBtn: boolean = false
@@ -22,6 +13,7 @@
 		serviceBtn = false
 		aboutBtn = true
 	}
+	export let aboutMe: string
 </script>
 
 <h1
@@ -31,7 +23,7 @@
 		sentences={['SEO Specialist', 'Data Analyst', 'NLP Aspiring']}
 	/>
 </h1>
-<div class="bg-style w-full border rounded-lg shadow bg-gray-800 border-gray-700">
+<div class="w-full border rounded-lg shadow bg-gray-800 border-gray-700">
 	<ul
 		class="flex flex-wrap text-sm font-medium text-center border-gray-200 rounded-t-lg text-gray-400 bg-gray-800"
 		id="defaultTab"
@@ -75,17 +67,7 @@
 		>
 			<h2 class="mb-3 text-3xl font-extrabold tracking-tight text-white">About Me</h2>
 			<p class="mb-5 text-gray-400">
-				I am Mani an SEO specialist With over 6 years of experience in SEO analysis and data
-				analytics, I specialize in conducting in-depth keyword clustering and topical mapping,
-				analyzing website performance metrics, and developing data-driven strategies to improve
-				online visibility and drive organic traffic. Throughout my career, I have demonstrated
-				proficiency in utilizing advanced analytics tools such as Google Analytics, Ahrefs,
-				Screaming Frog, and Tableau to interpret data, uncover trends, and communicate actionable
-				insights to stakeholders. I am skilled in Python programming, particularly in extracting,
-				transforming, and loading data from Google Search Console and Google Analytics 4 API, as
-				well as automating reporting processes in Excel. I am committed to staying updated on
-				industry trends, emerging technologies, and best practices in data analytics to ensure that
-				I deliver impactful results and maintain a competitive edge.
+				{aboutMe}
 			</p>
 			<a
 				href="/about"
@@ -178,8 +160,4 @@
 	p {
 		line-height: var(--font-lineheight-5);
 	}
-	.bg-style {
-		color: white;
-		background: theme('colors.gray.800');
-	}
-</style> -->
+</style>

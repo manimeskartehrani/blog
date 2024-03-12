@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{svelte,js,ts,jsx,tsx}'],
+	content: [ "./src/app.html",
+	"./src/**/*.{svelte,js,ts,jsx,tsx}"],
+
+	darkMode: "class",
 	theme: {
-		extend: {}
+	  extend: {
+		colors: {
+		  "dark-background": "#0F161E"
+		}
+	  },
 	},
-	plugins: [require("@tailwindcss/typography")]
-};
+	plugins: [
+	require("@tailwindcss/typography")
+	],
+  }
+  
+  
