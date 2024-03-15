@@ -1,6 +1,8 @@
 <script>
-	import { Car, Check } from 'lucide-svelte'
-	import CardTest from '$lib/components/CardTest.svelte'
+	// import CardTest from '$lib/components/CardTest.svelte'
+	// import NameList from '$lib/components/NameList.svelte'
+	// import PostList from '$lib/components/PostList.svelte'
+	// import Timer from '$lib/components/Timer.svelte'
 </script>
 
 <!-- <script lang="ts">
@@ -124,12 +126,21 @@
 
 <!-- Slot name-->
 <main>
-	<CardTest>
-		<div slot="header">
-			<h3>Header</h3>
+	<!-- <CardTest head="Header" button="View Details" img="/img/cover.jpg">
+		 <div>
+			<h3 class="text-3xl mb-6">Header</h3>
 		</div>
-		<hr />
-		<div slot="content"><img src="cover.jpg" alt="" /></div>
-		<div slot="footer"><button>View Details</button></div>
+
+		<div><img src="/img/cover.jpg" alt="" /></div>
+		<div>
+			<button class="bg-slate-400 h-10 w-40">View Details</button>
+		</div> 
 	</CardTest>
+
+	<NameList>
+		<h3 slot="hero" let:firstName let:lastName>{firstName}, {lastName}</h3>
+	</NameList>
+	<PostList />
+
+	<Timer /> -->
 </main>
